@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标题</title>
+    <!--
+    外部样式
+    <link rel="stylesheet" href="">
+    -->
+
+    <!--内部样式
+    <style>
+        /*内部样式*/
+        div{
+            background: green;
+            color: white;
+        }
+    </style>
+    -->
+    <style>
+        #a{
+            color: black;
+            background: green;     /*起作用*/
+        }
+
+        #b{
+            color: white;
+        }
+
+        .bg{
+            background: red;
+        }
+
+        #uli1 li{
+            background: red;
+        }
+        #uli1 .menu{
+            background: white;
+        }
+        #uli1>.menu{
+            background: blue;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!--内联样式-->
+    <!--可维护性不强-->
+    <div style="background: red;">div</div>
+
+    <p id="a" class="bg">1</p>
+    <p id="b" class="bg">2</p>
+
+    <ul id="uli1">
+        <li class="menu">
+            1
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <!--
+        css 选择器
+        1. 标签/元素 选择器 div{}
+        2. id选择器: 唯一  #id{}
+        3. class选择器 可重复 .class{}
+        4. 后代选择器 #uli1 li{}
+        5. 亲子代选择器  #uli1 > li{}  IE6不支持
+
+
+        权重值
+         id选择器 > class选择器 > tag(标签)
+    -->
+
+</body>
+</html>
