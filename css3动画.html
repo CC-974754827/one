@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        #div1{
+            width: 100px;
+            height: 100px;
+            background: #000000;
+        /*css3有兼容性问题*/
+            /*直接旋转*/
+            /*-moz-transform: rotate(30deg);*/
+            /*-webkit-transform: rotate(30deg);*/
+            /*-ms-transform: rotate(30deg);*/
+            /*-o-transform: rotate(30deg);*/
+            /*transform: rotate(30deg);*/
+
+
+            /*-webkit-transition: transform 1s linear;*/
+            /*-moz-transition: transform 1s linear;*/
+            /*-ms-transition: transform 1s linear;*/
+            /*-o-transition: transform 1s linear;*/
+            transition: all 1s linear;
+
+        }
+        /*鼠标放上旋转*/
+        /*#div1:hover{*/
+            /*-moz-transform: rotate(30deg);*/
+            /*-webkit-transform: rotate(30deg);*/
+            /*-ms-transform: rotate(30deg);*/
+            /*-o-transform: rotate(30deg);*/
+            /*transform: rotate(30deg);*/
+        /*}*/
+
+        #div1:hover{
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+            transform: rotate(30deg);
+
+            background: #00ff00;
+
+        }
+
+
+    </style>
+</head>
+<body>
+        <div id="div1">div1</div>
+
+</body>
+</html>
