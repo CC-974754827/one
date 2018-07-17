@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            /*background: rgba(225,0,0,0.5);*/
+            /*两个都写*/
+            opacity: 0.5; /*o~5 兼容性问题*/
+            filter: alpha(opacity=50);  /*0~100 用于早期IE*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
