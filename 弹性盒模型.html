@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .p{
+            display: -webkit-box;
+        }
+        .box{
+            height: 200px;
+            /*① 能够除开*/
+            /*float: left;*/
+            /*width: 25%;  四行变成四列*/
+
+            /*② 弹性盒模型*/
+            -webkit-box-flex: 1;  /*分份：分的是父元素的剩余空间*/
+        }
+        .box1{
+            background: #000;
+            /*-webkit-box-flex: 1;*/
+        }
+        .box2{
+            background: #FFFFFF;
+            /*-webkit-box-flex: 2;*/
+        }
+        .box3{
+            background: #00FFFF;
+            /*-webkit-box-flex: 1;*/
+        }
+        /*.box4{*/
+            /*background: #FF0036;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--
+盒模型
+！！！！
+    w3c标准盒模型：宽度=内容宽度
+    IE6以前版本，如果没有根标签<!doctype html>，怪异(混杂)模式：宽度=内容宽度+padding+border
+
+    转化：
+    <!doctype html>
+    box-sizing: border-box; 开启怪异盒模型
+-->
+    <div class="p">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <!--<div class="box box4"></div>-->
+    </div>
+<!--当html有内容时，比例发生改变，此时设置.box{width: 0;}-->
+</body>
+</html>
+
